@@ -1,0 +1,6 @@
+git clone this repo && \
+cd msoffice_decrypt && \
+docker build -t modecrypt:v1 . && \
+docker run --rm -it --cpus=2 --mount type=bind,source=$PWD,target=/msoffice_decrypt modecrypt:v1 bash && \
+cd msoffice_decrypt && \
+python3 generate_password_combinations.py
