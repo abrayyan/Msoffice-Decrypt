@@ -61,17 +61,17 @@ decrypt_file(msOfficeFilePath,
              psswdRange=None)
 ```
 
-	- **msOfficeFilePath** : Path to the msoffice file.
-    - **permutationsDirectoryPath** : The directory where the permutations will be saved.
-    - **psswdLength** : Maximum length of password to try.
-    - **minPsswd** , int , default=1 : Minimum length of password to try.
-    - **withDigits** , bool , default=True : Use if password might contain digits ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-    - **withLowerLetters** , bool , default=False : Use if password might contain small letters ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y']
-    - **withUpperLetters** , bool , default=False : Use if password might contain capital letters ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y']
-    - **withSpecialCharacters** , bool , default=False : Use if password might contain special characters ['!', '@', '#', '$', '%', '^', '&', '*']
-    - **multiCore** , bool , default=False : Use if you want the tool to use multi cores in parallel to speed up finding the password.
-    - **numberOfCores** , bool , default=None : Specify how many cores to use, if None this means use all available.
-    - **psswdRange** , tupple , default=None : Experimental do not use.
+- **msOfficeFilePath** : Path to the msoffice file.
+- **permutationsDirectoryPath** : The directory where the permutations will be saved.
+- **psswdLength** : Maximum length of password to try.
+- **minPsswd** , int , default=1 : Minimum length of password to try.
+- **withDigits** , bool , default=True : Use if password might contain digits ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+- **withLowerLetters** , bool , default=False : Use if password might contain small letters ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y']
+- **withUpperLetters** , bool , default=False : Use if password might contain capital letters ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y']
+- **withSpecialCharacters** , bool , default=False : Use if password might contain special characters ['!', '@', '#', '$', '%', '^', '&', '*']
+- **multiCore** , bool , default=False : Use if you want the tool to use multi cores in parallel to speed up finding the password.
+- **numberOfCores** , bool , default=None : Specify how many cores to use, if None this means use all available.
+- **psswdRange** , tupple , default=None : Experimental do not use.
 
 	
 ## Example
@@ -80,7 +80,7 @@ decrypt_file(msOfficeFilePath,
 ```
 pwd = decrypt_file(msOfficeFilePath="enccrypted.xlsx",
                    permutationsDirectoryPath="permutations/",
-				   withDigits=True,
+                   withDigits=True,
                    psswdLength=5,
                    multiCore = True,
                    numberOfCores = 6)
