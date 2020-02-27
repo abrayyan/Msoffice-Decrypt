@@ -8,24 +8,12 @@ the possible combinations reporting it if any found. The tool is based on the op
 
 the tool is deployed within a docker container to simplify installing the dependencies. Please go throw the steps below in order to build and install the tool.
 
-1. Sign up in github or gitlab.
-2. Download git, for windows download using [this source](https://git-scm.com/downloads). 
-3. Install git and configure it on your machine, go throw the following steps a - d to configure it other wise skip to step 4.
-	a. Open your terminal/(Powershell in windows) and make sure that git is installed by executing `git --version`.
-	b. Configure your user name (your git user name) using the command `git config --global user.name YOUR_GIT_USERNAME` ex:. `git config --global user.name myusername`.
-	c. Configure your email address you use to sign in git using the command `git config --global user.email YOUR_EMAIL` ex:. `git config --global user.email myemail@gmail.com`.
-	d. Generate a public ssh key and add it to your trusted keys in your git account:
-		- Type the command `ssh-keygen -t ed25519 -C "YOUR_EMAIL"` ex:. `ssh-keygen -t ed25519 -C "myemail@gmail.com"`.
-		- This command should generate 2 keys (public and private) and mostly will put them in the directory '/home/YOURMACHINE/.ssh' or 'C:\Users\YOURMACHINE\.ssh\' under file names id_ed25519 and id_ed25519.pub.
-		- Copy the content of id_ed25519.pub which is your public key.
-		- Log in to your git account (github or gitlab doesnt matter), got to setting, then ssh keys, then add new key.
-		- Paste the key there and assign any name you want for it.
-4. Download docker from here and install it on your machine [from here](https://docs.docker.com/docker-for-windows/install/).
-5. You are all set now, you just need to execute the batch file 'runme.bat' for windows or the shell file 'runme.sh' included with this file.
-	a. Create a new directory on your machine where you would want the tool to be installed.
-	b. Place the batch/shell file in that directory.
-	c. Open windows powershell or terminal and cd into that directory (redirect the shell to that directory).
-	d. Execute the batch file using the shell by typing the command `./runme.bat` or the shell file `bash runme.sh`. (Please check the notes below to understand the commands the batch file is executing)
+1. Download docker from here and install it on your machine [from here](https://www.docker.com/).
+2. Run the batch file 'runme.bat' for windows or the shell file 'runme.sh' included with this file.
+	- Create a new directory on your machine where you would want the tool to be installed.
+	- Place the batch/shell file in that directory.
+	- Open windows powershell or terminal and cd into that directory (redirect the shell to that directory).
+	- Execute the batch file using the shell by typing the command `./runme.bat` or the shell file `bash runme.sh`. (Please check the notes below to understand the commands the batch file is executing)
 	
 	```
 	git clone git@gitlab.com:abrayyan/msoffice_decrypt.git &
